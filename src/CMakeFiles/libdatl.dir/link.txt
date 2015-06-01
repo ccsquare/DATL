@@ -1,0 +1,2 @@
+/usr/bin/ar cq liblibdatl.a  
+/usr/bin/ranlib liblibdatl.a

@@ -1,0 +1,1 @@
+g++   --std=c++11    CMakeFiles/test_suite.dir/kdtree_test.cc.o CMakeFiles/test_suite.dir/datl_test.cc.o  -o test_suite -rdynamic ../src/liblibdatl.a 
