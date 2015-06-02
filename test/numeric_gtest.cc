@@ -33,6 +33,10 @@ int myfunction (int x, int y) {
 	return x + 2 * y;
 }
 
+int myop (int x, int y) {
+	return x + y + 1;
+}
+
 TEST_F (numeric_test, ACCUMULATE) {
 	
 	int init = 100;
@@ -47,3 +51,23 @@ TEST_F (numeric_test, ACCUMULATE) {
 }
 
 
+TEST_F (numeric_test, PARTIAL_SUM) {
+	
+	int val[] = {1, 2, 3, 4, 5};
+	int result[5];
+
+	DATL::partial_sum(val, val + 5, result);
+	ASSERT_EQ(result[0], 1);
+	ASSERT_EQ(result[1], 3);
+	ASSERT_EQ(result[2], 6);
+	ASSERT_EQ(result[3], 10);
+	ASSERT_EQ(result[4], 15);
+
+	DATL::partial_sum(val, val + 5, result, myop);
+
+	ASSERT_EQ(result[0], 1);
+	ASSERT_EQ(result[1], 4);
+	ASSERT_EQ(result[2], 8);
+	ASSERT_EQ(result[3], 13);
+	ASSERT_EQ(result[4], 19);
+}
