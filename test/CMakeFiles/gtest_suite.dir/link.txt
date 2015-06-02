@@ -1,1 +1,1 @@
-g++   --std=c++11    CMakeFiles/gtest_suite.dir/kdtree_gtest.cc.o  -o gtest_suite -rdynamic ../gtest-1.7.0/libgtest.a ../gtest-1.7.0/libgtest_main.a ../gtest-1.7.0/libgtest.a -lpthread 
+g++   --std=c++11    CMakeFiles/gtest_suite.dir/kdtree_gtest.cc.o CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o  -o gtest_suite -rdynamic ../gtest-1.7.0/libgtest.a ../gtest-1.7.0/libgtest_main.a ../gtest-1.7.0/libgtest.a -lpthread 

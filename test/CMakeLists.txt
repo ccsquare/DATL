@@ -6,7 +6,9 @@ set(APP_SRC
 
 set(GTEST_SRC
 	kdtree_gtest.cc
+	numeric_gtest.cc
 )
+
 
 add_executable(test_suite ${APP_SRC})
 target_link_libraries(test_suite libdatl)

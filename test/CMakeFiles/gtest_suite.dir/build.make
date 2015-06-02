@@ -72,14 +72,39 @@ test/CMakeFiles/gtest_suite.dir/kdtree_gtest.cc.o.provides: test/CMakeFiles/gtes
 
 test/CMakeFiles/gtest_suite.dir/kdtree_gtest.cc.o.provides.build: test/CMakeFiles/gtest_suite.dir/kdtree_gtest.cc.o
 
+test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o: test/CMakeFiles/gtest_suite.dir/flags.make
+test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o: test/numeric_gtest.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/tavares/DATL/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o"
+	cd /home/tavares/DATL/test && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o -c /home/tavares/DATL/test/numeric_gtest.cc
+
+test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest_suite.dir/numeric_gtest.cc.i"
+	cd /home/tavares/DATL/test && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/tavares/DATL/test/numeric_gtest.cc > CMakeFiles/gtest_suite.dir/numeric_gtest.cc.i
+
+test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest_suite.dir/numeric_gtest.cc.s"
+	cd /home/tavares/DATL/test && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/tavares/DATL/test/numeric_gtest.cc -o CMakeFiles/gtest_suite.dir/numeric_gtest.cc.s
+
+test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o.requires:
+.PHONY : test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o.requires
+
+test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o.provides: test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o.requires
+	$(MAKE) -f test/CMakeFiles/gtest_suite.dir/build.make test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o.provides.build
+.PHONY : test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o.provides
+
+test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o.provides.build: test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o
+
 # Object files for target gtest_suite
 gtest_suite_OBJECTS = \
-"CMakeFiles/gtest_suite.dir/kdtree_gtest.cc.o"
+"CMakeFiles/gtest_suite.dir/kdtree_gtest.cc.o" \
+"CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o"
 
 # External object files for target gtest_suite
 gtest_suite_EXTERNAL_OBJECTS =
 
 test/gtest_suite: test/CMakeFiles/gtest_suite.dir/kdtree_gtest.cc.o
+test/gtest_suite: test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o
 test/gtest_suite: test/CMakeFiles/gtest_suite.dir/build.make
 test/gtest_suite: gtest-1.7.0/libgtest.a
 test/gtest_suite: gtest-1.7.0/libgtest_main.a
@@ -93,6 +118,7 @@ test/CMakeFiles/gtest_suite.dir/build: test/gtest_suite
 .PHONY : test/CMakeFiles/gtest_suite.dir/build
 
 test/CMakeFiles/gtest_suite.dir/requires: test/CMakeFiles/gtest_suite.dir/kdtree_gtest.cc.o.requires
+test/CMakeFiles/gtest_suite.dir/requires: test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o.requires
 .PHONY : test/CMakeFiles/gtest_suite.dir/requires
 
 test/CMakeFiles/gtest_suite.dir/clean:

@@ -214,7 +214,7 @@ test/CMakeFiles/gtest_suite.dir/all: gtest-1.7.0/CMakeFiles/gtest_main.dir/all
 test/CMakeFiles/gtest_suite.dir/all: gtest-1.7.0/CMakeFiles/gtest.dir/all
 	$(MAKE) -f test/CMakeFiles/gtest_suite.dir/build.make test/CMakeFiles/gtest_suite.dir/depend
 	$(MAKE) -f test/CMakeFiles/gtest_suite.dir/build.make test/CMakeFiles/gtest_suite.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/tavares/DATL/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/tavares/DATL/CMakeFiles  3 4
 	@echo "Built target gtest_suite"
 .PHONY : test/CMakeFiles/gtest_suite.dir/all
 
@@ -224,7 +224,7 @@ all: test/CMakeFiles/gtest_suite.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/gtest_suite.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tavares/DATL/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tavares/DATL/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/gtest_suite.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tavares/DATL/CMakeFiles 0
 .PHONY : test/CMakeFiles/gtest_suite.dir/rule
@@ -249,7 +249,7 @@ clean: test/CMakeFiles/gtest_suite.dir/clean
 test/CMakeFiles/test_suite.dir/all: src/CMakeFiles/libdatl.dir/all
 	$(MAKE) -f test/CMakeFiles/test_suite.dir/build.make test/CMakeFiles/test_suite.dir/depend
 	$(MAKE) -f test/CMakeFiles/test_suite.dir/build.make test/CMakeFiles/test_suite.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/tavares/DATL/CMakeFiles  4 5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/tavares/DATL/CMakeFiles  5 6
 	@echo "Built target test_suite"
 .PHONY : test/CMakeFiles/test_suite.dir/all
 

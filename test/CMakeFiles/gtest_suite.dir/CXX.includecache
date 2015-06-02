@@ -14,6 +14,16 @@ iostream
 KDTree.h
 /home/tavares/DATL/test/KDTree.h
 
+/home/tavares/DATL/test/numeric_gtest.cc
+gtest/gtest.h
+/home/tavares/DATL/test/gtest/gtest.h
+numeric.h
+/home/tavares/DATL/test/numeric.h
+functional
+-
+iostream
+-
+
 gtest-1.7.0/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
 gtest-1.7.0/include/gtest/gtest/internal/gtest-death-test-internal.h
@@ -287,4 +297,10 @@ cmath
 -
 algorithm
 -
+
+src/impl/datl_numeric.h
+
+src/numeric.h
+impl/datl_numeric.h
+src/impl/datl_numeric.h
 

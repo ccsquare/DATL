@@ -211,6 +211,30 @@ kdtree_test.cc.s:
 	cd /home/tavares/DATL && $(MAKE) -f test/CMakeFiles/test_suite.dir/build.make test/CMakeFiles/test_suite.dir/kdtree_test.cc.s
 .PHONY : kdtree_test.cc.s
 
+numeric_gtest.o: numeric_gtest.cc.o
+.PHONY : numeric_gtest.o
+
+# target to build an object file
+numeric_gtest.cc.o:
+	cd /home/tavares/DATL && $(MAKE) -f test/CMakeFiles/gtest_suite.dir/build.make test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o
+.PHONY : numeric_gtest.cc.o
+
+numeric_gtest.i: numeric_gtest.cc.i
+.PHONY : numeric_gtest.i
+
+# target to preprocess a source file
+numeric_gtest.cc.i:
+	cd /home/tavares/DATL && $(MAKE) -f test/CMakeFiles/gtest_suite.dir/build.make test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.i
+.PHONY : numeric_gtest.cc.i
+
+numeric_gtest.s: numeric_gtest.cc.s
+.PHONY : numeric_gtest.s
+
+# target to generate assembly for a file
+numeric_gtest.cc.s:
+	cd /home/tavares/DATL && $(MAKE) -f test/CMakeFiles/gtest_suite.dir/build.make test/CMakeFiles/gtest_suite.dir/numeric_gtest.cc.s
+.PHONY : numeric_gtest.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -231,6 +255,9 @@ help:
 	@echo "... kdtree_test.o"
 	@echo "... kdtree_test.i"
 	@echo "... kdtree_test.s"
+	@echo "... numeric_gtest.o"
+	@echo "... numeric_gtest.i"
+	@echo "... numeric_gtest.s"
 .PHONY : help
 
 

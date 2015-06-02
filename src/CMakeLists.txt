@@ -3,6 +3,7 @@ set(datl_SRC
 	KDTree.h
 	Point.h
 	BoundedPQueue.h
+	numeric.h
 	)
 
 add_library(libdatl ${datl_SRC})

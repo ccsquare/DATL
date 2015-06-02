@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gtest_suite.dir/kdtree_gtest.cc.o"
+  "CMakeFiles/gtest_suite.dir/numeric_gtest.cc.o"
   "gtest_suite.pdb"
   "gtest_suite"
 )
